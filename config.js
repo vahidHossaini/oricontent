@@ -1,16 +1,31 @@
 module.exports = class paymentConfig
 {
+  
     constructor(config)
     { 
          
     }
     getPackages()
     {
-       return []
+       return [
+       {name:"eval"}
+       ]
     }
-    
+    getMessage()
+	{
+		return{
+			default001:"", 
+		}
+	}
     getVersionedPackages()
     { 
       return []
+    }
+    getDefaultConfig()
+    {
+      return {
+		context:"default",  
+		 
+      }
     }
 }
